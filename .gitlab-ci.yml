@@ -1,0 +1,11 @@
+image: mcr.microsoft.com/dotnet/sdk:latest
+
+stages:
+  - check
+  
+check:
+  stage: check
+  script:
+    - 'dotnet build ./NetSorter'
+    - 'dotnet build ./NetSorterTest'
+    - 'dotnet test ./NetSorterTest'
