@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Sorter
+namespace NetSorter
 {
     /// <summary>
     /// Helper object for tracking an ISorter and the associated test

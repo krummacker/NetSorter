@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
-
-namespace Sorter
+﻿namespace NetSorter
 {
     /// <summary>
     /// A Sorter can sort Lists with comparable objects. Classes that implement

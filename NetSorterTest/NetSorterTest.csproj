@@ -16,6 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Sorter\Sorter.csproj" />
+    <ProjectReference Include="..\NetSorter\NetSorter.csproj" />
   </ItemGroup>
 </Project>

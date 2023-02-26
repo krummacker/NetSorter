@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Sorter;
+using NetSorter;
 
 namespace SorterTest
 {
