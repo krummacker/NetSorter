@@ -5,10 +5,10 @@ pipelines:
     - step:
         name: Check
         script:
-          - 'dotnet build ./NetSorter'
-          - 'dotnet build ./NetSorterTest'
-          - 'dotnet test ./NetSorterTest'
-          - 'ls -la ./NetSorter/bin/Debug/net6.0/'
-          - './NetSorter/bin/Debug/net6.0/NetSorter'
+          - dotnet build ./NetSorter
+          - dotnet build ./NetSorterTest
+          - dotnet test ./NetSorterTest
+          - ls -la ./NetSorter/bin/Debug/net6.0/
+          - ./NetSorter/bin/Debug/net6.0/NetSorter
 
 
