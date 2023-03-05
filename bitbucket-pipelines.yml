@@ -1,0 +1,14 @@
+image: golang:latest
+
+pipelines:
+  default:
+    - step:
+        name: Check
+        script:
+          - 'dotnet build ./NetSorter'
+          - 'dotnet build ./NetSorterTest'
+          - 'dotnet test ./NetSorterTest'
+          - cd NetSorter
+          - dotnet run
+
+
