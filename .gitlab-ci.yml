@@ -1,11 +1,15 @@
 image: mcr.microsoft.com/dotnet/sdk:latest
 
 stages:
-  - check
+  - test
   
 check:
-  stage: check
+  stage: test
   script:
     - 'dotnet build ./NetSorter'
     - 'dotnet build ./NetSorterTest'
     - 'dotnet test ./NetSorterTest'
+
+# test stage
+include:
+  - template: Jobs/SAST.gitlab-ci.yml
