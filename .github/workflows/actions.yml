@@ -9,5 +9,5 @@ jobs:
       - run: dotnet build ./NetSorter
       - run: dotnet build ./NetSorterTest
       - run: dotnet test ./NetSorterTest
-      - run: cd NetSorter
-      - run: dotnet run
+      - run: ls -la ./NetSorter/bin/Debug/net6.0/ 
+      - run: ./NetSorter/bin/Debug/net6.0/NetSorter
