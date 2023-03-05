@@ -11,6 +11,10 @@ check:
     - 'dotnet test ./NetSorterTest'
     - cd NetSorter
     - dotnet run
+    - ls -la .
+    - ls -la ./NetSorter
+    - ls -la ./NetSorter/bin
+    - ls -la ./NetSorter/bin/Debug
     - ls -la ./NetSorter/bin/Debug/net6.0/
     - ./NetSorter/bin/Debug/net6.0/NetSorter
 
