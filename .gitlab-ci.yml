@@ -9,6 +9,8 @@ check:
     - 'dotnet build ./NetSorter'
     - 'dotnet build ./NetSorterTest'
     - 'dotnet test ./NetSorterTest'
+    - cd NetSorter
+    - dotnet run
 
 # test stage
 include:
