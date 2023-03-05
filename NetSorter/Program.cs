@@ -83,7 +83,9 @@ namespace NetSorter
             List<int> result = new(length);
             for (int i = 0; i < length; ++i)
             {
+                #pragma warning disable SCS0005
                 int r = Random.Next();
+                #pragma warning restore SCS0005
                 result.Add(r);
             }
             return result;
@@ -116,7 +118,9 @@ namespace NetSorter
             while (n > 1)
             {
                 n--;
+                #pragma warning disable SCS0005
                 int k = Random.Next(n + 1);
+                #pragma warning restore SCS0005
                 SorterInfo<int> value = copy[k];
                 copy[k] = copy[n];
                 copy[n] = value;

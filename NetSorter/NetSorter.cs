@@ -148,7 +148,9 @@
 
         internal override int ComputePivotIndex(List<T> input)
         {
+            #pragma warning disable SCS0005
             return Random.Next(input.Count);
+            #pragma warning restore SCS0005
         }
     }
 
@@ -206,6 +208,7 @@
         {
             Sorter = sorter;
             Input = input;
+            Output = new();
         }
 
         internal void Execute()
