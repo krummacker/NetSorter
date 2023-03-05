@@ -1,4 +1,3 @@
-#image: mcr.microsoft.com/dotnet/sdk:latest
 image: mcr.microsoft.com/dotnet/sdk:6.0
 
 stages:
@@ -12,6 +11,8 @@ check:
     - 'dotnet test ./NetSorterTest'
     - cd NetSorter
     - dotnet run
+    - ls -la ./NetSorter/bin/Debug/net6.0/
+    - ./NetSorter/bin/Debug/net6.0/NetSorter
 
 # test stage
 include:
